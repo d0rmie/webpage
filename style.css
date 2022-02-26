@@ -43,18 +43,19 @@ li.list+li.list:before {
 .grid-item {
     border:1px solid white;
 }
-.languages ul{
+.grid-item ul{
     list-style-type:none;
     padding:0;
 }
-.languages ul li {
+.grid-item ul li {
     width:100%;
-    font-size:40px;
+    font-size:32px;
+    margin-top:10px;
 }
 .img-container {
 margin:auto;
 }
-.language-img {
+.grid-img {
     max-width:40px;
     display:inline;
     margin-right:5px;
@@ -64,16 +65,20 @@ margin:auto;
     max-width:100%;
     max-height:500px;
 }
-@media only screen and (max-width:320px) {
+@media only screen and (max-width:450px) {
     h1 {
         font-size: 16px;
     }
-    .languages ul li {
-        font-size:16px;
+    .grid-item ul li {
+        font-size:12px;
+        margin-top:5px;
     }
-    .language-img {
+    .grid-img {
         max-width:20px;
         display:inline;
         margin-right:5px;
+    }
+    #wordy {
+font-size:10px;
     }   
 }
