@@ -12,7 +12,8 @@ nav ul {
 }
 .list {
     display:inline;
-    border: 5px solid silver;
+    border: 5px solid #C43B66
+    ;
     border-radius:5px;
     padding: 3px;
     border-top-right-radius: 25px;
@@ -39,6 +40,7 @@ li.list+li.list:before {
     display:grid;
     grid-template:1fr / 1fr 1fr 1fr;
     border: 10px solid white;
+    border-radius:25px;
 }
 .grid-item {
     border:1px solid white;
@@ -54,6 +56,7 @@ li.list+li.list:before {
 }
 .img-container {
 margin:auto;
+border-radius:5px;
 }
 .grid-img {
     max-width:40px;
@@ -65,9 +68,34 @@ margin:auto;
     max-width:100%;
     max-height:500px;
 }
+#contact-title {
+    text-align:center;
+
+}
+address p {
+    font-style:normal
+}
+address a {
+    font-style:italic;
+}
+.img-end {
+    width:100%;
+    height: 200px;
+    
+}
+.img-end figure img {
+    max-width:100%;
+    height:300px;
+}
+figcaption {
+    font-size:40px;
+}
 @media only screen and (max-width:450px) {
     h1 {
-        font-size: 16px;
+        font-size: 20px;
+    }
+    h2 {
+        font-size:16px;
     }
     .grid-item ul li {
         font-size:12px;
@@ -80,5 +108,8 @@ margin:auto;
     }
     #wordy {
 font-size:10px;
-    }   
+    } 
+    figcaption {
+        font-size:16px;
+    }  
 }
